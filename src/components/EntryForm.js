@@ -13,12 +13,14 @@ export const EntryForm = () => {
     const postData = async () => {
       const response = await axios.post(PROD_BASE_URL + 'save', formData);
       console.log(response);
-    }
+    };
     postData();
+    setContent('');
+    setName('');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form'>
       <label>Name: </label>
       <input
         type='text'
@@ -36,7 +38,7 @@ export const EntryForm = () => {
         name='content'
         id='content'
         required
-        maxLength={50}
+        maxLength={255}
         rows='5'
         cols='30'
         value={content}

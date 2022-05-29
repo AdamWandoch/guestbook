@@ -3,8 +3,10 @@ import React from 'react';
 export const GuestbookEntry = (props) => {
   return (
     <div className='entry'>
-      <p>Name: {props.name}</p>
-      <p>Content: {props.content}</p>
+      <p>
+        <span className='author'>{props.name}</span> wrote:
+      </p>
+      <p className='content'>{props.content}</p>
     </div>
   );
 };
