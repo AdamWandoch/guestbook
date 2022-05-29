@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { GuestbookEntry } from './GuestbookEntry';
 import axios from 'axios';
+import { DEV_BASE_URL } from '../api_urls';
+import { PROD_BASE_URL } from '../api_urls';
 
 export const GuestbookEntries = () => {
-  
-  // API URLs
-  const DEV_BASE_URL = "http://localhost:5000/guestbook/v1/";
-  const PROD_BASE_URL = "https://adam-studies-apis.herokuapp.com/guestbook/v1/";
-  
-  const [entries, setEnries] = useState([]);
+
+  const [entries, setEntries] = useState([]);
 
   useEffect(() => {
-    async function fetchData() {
+    async function getData() {
       const request = await axios.get(PROD_BASE_URL + "getall");
-      setEnries(request.data.listOfEntries);
+      setEntries(request.data.listOfEntries);
     }
     setInterval(() => {
-      fetchData();
+      getData();
     }, 2000);
   }, []);
   
