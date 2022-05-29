@@ -1,10 +1,12 @@
 import './App.css';
+import { EntryForm } from './components/EntryForm';
 import { GuestbookEntries } from './components/GuestbookEntries';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <GuestbookEntries />
+      <EntryForm />
     </div>
   );
 }

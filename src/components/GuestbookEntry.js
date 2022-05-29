@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const GuestbookEntry = (props) => {
   return (
@@ -6,5 +6,5 @@ export const GuestbookEntry = (props) => {
       <p>Name: {props.name}</p>
       <p>Content: {props.content}</p>
     </div>
-  )
-}
+  );
+};
