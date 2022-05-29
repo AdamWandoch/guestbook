@@ -95,8 +95,4 @@ button {
   .entries {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .form {
-    /* max-width: 1000px; */
-  }
 }
