@@ -16,7 +16,6 @@ export const EntryForm = () => {
     };
     postData();
     setContent('');
-    setName('');
   };
 
   return (
