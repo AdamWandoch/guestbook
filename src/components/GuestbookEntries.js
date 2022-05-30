@@ -20,7 +20,21 @@ export const GuestbookEntries = () => {
 
   return (
     <>
-      <h1>Guest Book Entries:</h1>
+      <h1>Guest Book</h1>
+      <p className='description'>
+        Simple project demonstrating React basics and ES6 syntax, useEffect(),
+        useState(), props destructuring with spread operator,{' '}
+        <a
+          href='https://github.com/AdamWandoch/adam-studies-apis'
+          target='_blank'
+        >
+          API
+        </a>{' '}
+        access with Axios. Code available on{' '}
+        <a href='https://github.com/AdamWandoch/guestbook' target='_blank'>
+          GitHub.
+        </a>
+      </p>
       <h2 id='waiting'>waiting for data...</h2>
       <div className='entries'>
         {entries.map((entry) => (
