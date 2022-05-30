@@ -32,6 +32,7 @@ h1 {
   padding: 1rem;
   background-color: #fff;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .description a, .description a:visited {
@@ -40,7 +41,7 @@ h1 {
 }
 
 .App {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
