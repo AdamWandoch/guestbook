@@ -12,7 +12,7 @@ export const GuestbookEntries = () => {
       const response = await axios.get(PROD_BASE_URL + 'getall');
       document.getElementById('waiting').style.display = 'none';
       setEntries(response.data.listOfEntries);
-    }
+    };
     setInterval(() => {
       getData();
     }, 2000);

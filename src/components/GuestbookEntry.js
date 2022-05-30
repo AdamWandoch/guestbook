@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const GuestbookEntry = (props) => {
+export const GuestbookEntry = ({ name, content }) => {
   return (
     <div className='entry'>
       <p>
-        <span className='author'>{props.name}</span> wrote:
+        <span className='author'>{name}</span> wrote:
       </p>
-      <p className='content'>{props.content}</p>
+      <p className='content'>{content}</p>
     </div>
   );
 };
